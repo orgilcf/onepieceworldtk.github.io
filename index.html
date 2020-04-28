@@ -1281,7 +1281,7 @@
 		var e = id("epN"), m = id("mov"), isSub = false, isEp = true, l = 1, lngName = 0, lngN = 7;
 		init();
 		$.get("https://ipinfo.io", function (v) {
-			l = v.country == "MN" ? 0 : v.country == "RU" ? 2 : v.country == "TR" ? 3 : v.country == "SA" ? 4 : v.country == "VN" ? 5 : 1;
+			l = v.country == "MN" ? 0 : v.country == "RU" ? 2 : v.country == "TR" ? 3 : v.country == "SA" ? 4 : v.country == "VN" ? 5 : v.country == "TH" ? 6 : 1;
 			id("lng").value = l;
 			init();
 		}, "jsonp");
